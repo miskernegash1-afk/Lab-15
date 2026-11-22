@@ -24,3 +24,17 @@ plt.grid(True)
 plt.savefig("cubes_5.png")
 plt.close()
 
+
+# Part 2: Plot the first 5000 cubes
+x_values = list(range(1, 5001))
+y_values = [x ** 3 for x in x_values]
+
+plt.plot(x_values, y_values)
+plt.title("First 5000 Cubes")
+plt.xlabel("Value")
+plt.ylabel("Cube of Value")
+plt.grid(True)
+
+plt.savefig("cubes_5000.png")
+plt.close()
+
